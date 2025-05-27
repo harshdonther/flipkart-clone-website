@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex box practice set</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0;
+      }
+      header {
+        background-color: black;
+        display:flex;
+        height: 10vh;
+        flex-wrap: wrap;
+      }
+      .navbar {
+        width: 100vw;
+        color: aliceblue;
+        display: inline-flex;
+        flex-wrap: wrap;
+      }
+      ul {
+        text-decoration: none;
+        text-transform: none;
+        text-emphasis: none;
+        list-style: none;
+        flex-wrap: wrap;
+        
+      }
+     
+      li{
+        padding: 24px;
+      }
+      .input{
+        float: right;
+        margin: -5.7vw;
+        margin-right: 10vw
+      }
+      .left{
+        height: 80vh;
+        width: 50vw;
+        float: left;
+        background-color: brown;
+      }
+      .rigth{
+        height: 80vh;
+        width: 40vw;
+        float: right;
+        background-color: blueviolet;
+      }
+      footer {
+        text-align: center;
+        background-color: blue;
+        width: 100vw;
+        
+      }
+      .A{
+        margin: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li class="A">Home</li>
+          <li class="B">contact us</li>
+          <li class="c">About</li>
+        </ul>
+          <input type="search" class="input" placeholder="search here" />
+      </nav>
+    </header>
+    <main class="main">
+      <div class="left"></div>
+      <div class="rigth"></div>
+    </main>
+    <footer>Copyrigth &copy; reserved</footer>
+  </body>
+</html>

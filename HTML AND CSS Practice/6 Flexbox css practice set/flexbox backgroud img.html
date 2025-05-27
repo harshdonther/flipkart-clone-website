@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background property</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url(img/img2.jpg);
+        background-size: auto;
+        width: 100vw;
+        height: 200vh;
+      }
+      .logo1 {
+        height: 6vh;
+      }
+      nav {
+        background-image: url(img/imgbackground1.jpg);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        display: flex;
+        position: relative;
+        width: 100vw;
+        height: 7vh;
+        color: antiquewhite;
+      }
+      li {
+        text-decoration: none;
+        text-transform: none;
+        display: inline;
+      
+        
+      }
+      .contaner {
+        display: inline-flex;
+        position: relative;
+        background-color: transparent;
+        width: 89vw;
+        height: 32vh;
+        top: 25vh;
+        padding: 66px;
+        border: 1px solid black;
+        background-image: url(img/imgbackground1.jpg);
+        background-size: contain;
+        
+      }
+      .box1{
+        height: 30vh;
+        width: 15vw;
+        margin: 0 1vh;
+        background-image: url(img/imgp1.jpg);
+        background-size: 30vh;
+        position: relative;
+        left: 10vw;
+        
+      }
+      .box2{
+        height: 30vh;
+        width: 15vw;
+        margin: 0 1vh;
+        background-image: url(img/imgp2.jpg);
+        background-size: 30vh;
+        position: relative;
+        left: 10vw;
+      }
+      .box3{
+        height: 30vh;
+        width: 15vw;
+        margin: 0 1vh;
+        background-image: url(img/imgp3.jpg);
+        background-size: 30vh;
+        position: relative;
+        left: 10vw;
+      }
+      .box4{
+        height: 30vh;
+        width: 15vw;
+        margin: 0 1vh;
+        background-image: url(img/imgp4.jpg);
+        background-size: 30vh;
+        position: relative;
+        left: 10vw;
+      }
+      .ul1{
+        display: flex;
+        position: relative;
+        left: 65vw;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="img/logo1.png" class="logo1" alt="img" />
+        <ul class="ul1">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact us</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- <img src="img/img2.jpg" alt="" class="img1"> -->
+      <div class="contaner">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+      </div>
+    </main>
+  </body>
+</html>

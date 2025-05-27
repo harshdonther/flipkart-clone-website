@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>BGMI Stats Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      background: white;
+      padding: 20px;  
+      max-width: 400px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <h2>BGMI Player Stats</h2>
+    <input type="text" id="playerName" placeholder="Enter Player Name" />
+    <input type="number" id="kills" placeholder="Enter Kills" />
+    <button onclick="submitStats()">Submit</button>
+  </div>
+
+<!-- 🔊 Sound for success -->
+<audio id="successSound" src="https://assets.mixkit.co/sfx/download/mixkit-achievement-bell-600.wav" preload="auto"></audio>
+
+<script>
+  function submitStats() {
+    const name = document.getElementById("playerName").value;
+    const kills = document.getElementById("kills").value;
+
+    if (name === "" || kills === "") {
+      showMessage("❌ Please fill all fields", "error");
+      return;
+    }
+
+    console.log("Player Name:", name);
+    console.log("Kills:", kills);
+
+    // ✅ Play success sound
+    document.getElementById("successSound").play();
+
+    // ✅ Show success message
+    showMessage("✅ Submit Successful!", "success");
+
+    // 🧹 Reset the form
+    document.getElementById("playerName").value = "";
+    document.getElementById("kills").value = "";
+  }
+
+  function showMessage(message, type) {
+    const msg = document.createElement("div");
+    msg.innerText = message;
+    msg.style.position = "fixed";
+    msg.style.top = "20px";
+    msg.style.left = "50%";
+    msg.style.transform = "translateX(-50%)";
+    msg.style.padding = "15px 25px";
+    msg.style.backgroundColor = type === "success" ? "#28a745" : "#dc3545";
+    msg.style.color = "white";
+    msg.style.fontSize = "16px";
+    msg.style.fontWeight = "bold";
+    msg.style.borderRadius = "8px";
+    msg.style.boxShadow = "0 2px 10px rgba(0,0,0,0.2)";
+    msg.style.zIndex = "1000";
+    msg.style.opacity = "1";
+    msg.style.transition = "opacity 0.5s ease";
+
+    document.body.appendChild(msg);
+
+    // ⏱️ Remove after 3 seconds
+    setTimeout(() => {
+      msg.style.opacity = "0";
+      setTimeout(() => msg.remove(), 500);
+    }, 2000);
+  }
+</script>
+
+  
+</body>
+</html>

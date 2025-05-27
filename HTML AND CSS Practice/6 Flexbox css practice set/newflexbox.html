@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new flex box</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        display: inline-flex;
+      }
+      nav {
+        background-color: black;
+        color: rgb(255, 255, 255);
+        height: 10vh;
+        width: 100vw;
+      }
+      ul {
+        display: flex;
+        position: relative;
+        left: 11vw;
+        bottom: 7vh;
+      }
+      li {
+        display: inline-flex;
+        margin: 0 4vh;
+        font-size: 2vh;
+      }
+      .left {
+        background-color: red;
+        height: 60vh;
+        width: 30vw;
+      }
+      .rigth {
+        background-color: rgb(45, 36, 213);
+        height: 60vh;
+        width: 30vw;
+        position: relative;
+        left: 40vw;
+      }
+      .cont {
+        display: inline-flex;
+      }
+      .logo1 {
+        display: inline-flex;
+        height: 7.4vh;
+        margin: 1vw 0 0 1vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="img/logo1.png" alt="" class="logo1" />
+        <ul>
+          <li>Home</li>
+          <li>Contact us</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="cont">
+        <div class="left"></div>
+        <div class="rigth"></div>
+      </div>
+    </main>
+  </body>
+</html>

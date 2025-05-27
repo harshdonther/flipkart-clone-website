@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .contan{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 2px solid black;
+            justify-content:center;
+            background-color: aqua;
+            align-items: center;
+            /* align-content: center; */
+            height: 150vh;
+            font-size: 1vh;
+        }
+        .box1{
+            background-color: blue;
+            height:45vh;
+            /* width: 30vw; */
+            border: 2px solid black;
+            order: 4;
+            flex-grow: 4;
+            flex-shrink:2;    
+        }
+        .box2{
+            background-color: rgb(255, 8, 8);
+            height: 45vh;
+            /* width: 30vw;   */
+            border: 2px solid black;
+            order: 3;
+            flex-grow: 3;
+            flex-shrink: 1;
+        }
+        .box3{
+            background-color: rgb(9, 170, 30);
+            height: 45vh;
+            /* width: 30vw;   */
+            border: 2px solid black;
+            order: 2;
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+        .box4{
+            background-color: rgb(169, 206, 21);
+            height: 45vh;
+            /* width: 30vw;   */
+            border: 2px solid black;
+            order: 1;
+            flex-grow: 1;
+            flex-shrink: 1;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="contan">
+    <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime soluta rerum mollitia odit nobis natus illo ex illum commodi veritatis reiciendis iusto voluptate non, consequatur explicabo numquam officiis eum voluptas?</div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsum placeat iure obcaecati in saepe aliquid consequatur eius nisi, quo quod voluptatum molestias dolor unde, maxime optio eos dignissimos atque.</div>
+    <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit provident nisi dolor, quod magni neque, voluptas quis quae possimus aut iusto esse explicabo suscipit veritatis maiores nemo quasi laboriosam minima?</div>
+    <div class="box4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quam cum iusto quaerat aliquid nobis laudantium ab odio. Enim harum suscipit dolorum earum recusandae non incidunt voluptates, neque optio quas?</div>
+</div>
+</body>
+</html>

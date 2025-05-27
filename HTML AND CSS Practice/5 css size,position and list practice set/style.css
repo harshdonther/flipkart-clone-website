@@ -1,0 +1,40 @@
+*{
+    margin: 0;padding: 0;
+}  
+header{
+    background-color: rgb(157, 129, 129);
+    color: rgb(255, 255, 255);
+    position: sticky;
+    display: inline-block;
+    width: 100vw;
+    height: 10vh;
+    z-index: 10;
+    top: 0;
+    font-size: 4vw;
+}
+.nav2{
+    display: inline;
+    padding: 3vh;
+    position: relative;
+    top: 3vh;
+}
+.q1{
+    position:relative;
+    left: 63vw;
+    font-size: 3vw;
+}
+.box{
+    height: 1111px;
+    background-color: rgb(64, 64, 152);
+    font-size: 5vw;
+}
+ul{
+    list-style: upper-roman inside;
+}
+button{
+    font-size: 3vw;
+}
+#site-search{
+
+    font-size: 3vw;
+}

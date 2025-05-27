@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .main{
+        height: 100vh;
+        width: 100vw;
+        background-color:blue ;
+      }
+      .footer{
+        background-color: black;
+        height: 2vh;
+        width: 100vw;
+      }
+       .loading-bar{
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 2px;
+        width: 0%;
+        background-color: red;
+        animation: loading 1s linear forwards,
+        hide 0s linear 1s forwards;
+        z-index: 9999;
+      }
+      @keyframes loading {
+        0%{width: 0%;}
+        100%{
+          width: 100%;
+        }
+        
+      }
+      @keyframes hide {to{
+        opacity:0;
+        visibility:hidden;
+      }
+        
+      } 
+    ul{
+      display: inline-flex;
+      list-style: none;
+    }
+    li{
+      padding: 6vh;
+      font-size:    4vh;
+    } 
+      
+    </style>
+  </head>
+  <header>
+    <div class="nav1">
+      <div class="navbar">
+       <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact us</li>
+       </ul></div>
+
+    </div>
+  </header>
+  <body>
+     <div class="loading-bar"></div>
+    <div class="main"></div>
+    <footer class="footer"></footer>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.box1{
+    height: 580px;
+    width: 430px;
+    background-color: yellowgreen;
+    display: inline-block;
+}
+.box2{
+    height: 580px;
+    width: 430px;
+    background-color: rgb(0, 181, 130);
+    display: inline-block;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+p{
+    background-color: yellowgreen;
+    height: 1080px;
+    width: 1010px;
+    color:rgb(0, 0, 0);
+    text-decoration: overline  ;
+    text-decoration:underline;
+    text-decoration:line-through;
+    text-transform: capitalize;
+    line-height: 3;
+    font-family: 'Times New Roman',monospace;
+    font-size: larger;
+    font-weight: 100;
+    font-style: oblique;
+    font-variant: inherit;
+
+}

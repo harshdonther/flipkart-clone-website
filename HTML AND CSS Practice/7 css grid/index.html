@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css grid</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .cont{
+        display: grid;
+        background-color: yellowgreen;
+        grid-template-columns:24% 24% 24% 24%;
+        grid-template-rows:30% 30% 30% 30%;
+        justify-content:center;
+        gap: 9px 9px;
+        align-content: center;
+        
+      }
+      .b1{
+        background-color: violet;
+       border:3px solid black;
+       grid-row: 1/ span 4;
+      }
+      .b11{
+        background-color: violet;
+       border:3px solid black;
+      }
+      .b12{
+        background-color: violet;
+       border:3px solid black;
+      }
+      .b13{
+        background-color: violet;
+       border:3px solid black;
+      }
+      .b14{
+        background-color: violet;
+       border:3px solid black;
+      }
+      .b15{
+        background-color: violet;
+       border:3px solid black;
+      }
+      .b16{
+        background-color: violet;
+       border:3px solid black;
+      }
+      .b17{
+        background-color: violet;
+       border:3px solid black;
+      }
+      .b18{
+        background-color: violet;
+       border:3px solid black;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="b1">1</div>
+      <div class="b11">2</div>
+      <div class="b12">3</div>
+      <div class="b13">4</div>
+      <div class="b14">5</div>
+      <div class="b15">6</div>
+      <div class="b16">7</div>
+      <div class="b17">8</div>
+      <div class="b18">9</div>
+    </div>
+  </body>
+</html>
